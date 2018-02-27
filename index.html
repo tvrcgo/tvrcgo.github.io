@@ -1,6 +1,5 @@
 ---
-layout: page
-description: "Blog"
+layout: default
 ---
 
 {% for post in paginator.posts %}
@@ -13,7 +12,6 @@ description: "Blog"
     <div class="post-summary">
         {{ post.content | strip_html | truncate:200 }}
     </div>
-    <p class="post-meta"></p>
 </div>
 {% endfor %}
 
