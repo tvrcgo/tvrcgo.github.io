@@ -9,13 +9,14 @@ layout: default
 		<span class="post-meta">{{ page.date | date: "%b %-d, %Y" }} <a href="{{ site.url }}" class='post-agent'>{{ site.title }}</a></span>
 	</header>
 
-	<article>
-		<div class="post-content">
-			{{ content }}
-		</div>
-		<ul class="post-pagination">
+	<article class="post-content">
+		{{ content }}
+	</article>
+
+	<div class="post-pagination">
+		<ul>
 			{% if page.previous.url %}
-			<li class="previous">
+			<li class="prev">
 				<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Prev</a>
 			</li>
 			{% endif %}
@@ -25,6 +26,6 @@ layout: default
 			</li>
 			{% endif %}
 		</ul>
-	</article>
+	</div>
 
 </div>

@@ -34,9 +34,14 @@ p {
   }
 
   &.post {
+
     .post-title {
       font-size: 24px;
       margin: 0 0 15px 0;
+    }
+
+    .post-pagination {
+      margin: 40px 0;
     }
   }
 
@@ -50,6 +55,10 @@ p {
 
   .post-summary {
     color: #777;
+  }
+
+  .post-pagination {
+    display: none;
   }
 }
 
