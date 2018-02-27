@@ -4,11 +4,11 @@ description: "An engineer"
 email: tvrcgo@gmail.com
 keyword: ""
 url: "http://tvrcgo.com"              # your host, for absolute URL
-baseurl: "/p"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/p/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Build settings
 highlighter: rouge
-permalink: /:year-:month-:day-:title
+permalink: /:title
 paginate: 10
 
 # Gems

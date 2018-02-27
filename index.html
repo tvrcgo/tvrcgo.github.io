@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h2>{{ site.title }}</h2>
+
 {% for post in paginator.posts %}
 <div class="post-item">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -15,7 +17,6 @@ layout: default
 </div>
 {% endfor %}
 
-<!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pagination">
     {% if paginator.previous_page %}
