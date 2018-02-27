@@ -3,6 +3,7 @@
 
 body {
   background-color: #fdfdfd;
+  font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 }
 
 a {
@@ -12,6 +13,13 @@ a {
 
 h1, h2, h3, h4 {
   font-weight: normal;
+  color: #3e3e3e;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #3e3e3e;
 }
 
 .site {
