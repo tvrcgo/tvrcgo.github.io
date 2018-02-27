@@ -27,19 +27,29 @@ p {
   padding: 15px;
 }
 
-.post-title {
-  font-size: 24px;
-  margin: 0 0 15px 0;
-}
+.page {
 
-.post-meta {
-  color: #999;
+  &.index {
 
-  .post-agent {
-    margin-left: 8px;
+  }
+
+  &.post {
+    .post-title {
+      font-size: 24px;
+      margin: 0 0 15px 0;
+    }
+  }
+
+  .post-meta {
+    color: #999;
+
+    .post-agent {
+      margin-left: 8px;
+    }
+  }
+
+  .post-summary {
+    color: #777;
   }
 }
 
-.post-summary {
-  color: #777;
-}

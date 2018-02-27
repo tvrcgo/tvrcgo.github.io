@@ -2,34 +2,38 @@
 layout: default
 ---
 
-<h2>{{ site.title }}</h2>
+<div class='page index'>
 
-<div class='posts'>
-	{% for post in paginator.posts %}
-	<div class="post-item">
-		<a href="{{ post.url | prepend: site.baseurl }}">
-			<h4 class="post-title">
-				{{ post.title }}
-			</h4>
-		</a>
-		<div class="post-summary">
-			{{ post.content | strip_html | truncate:100 }}
+	<h2>{{ site.title }}</h2>
+
+	<div class='posts'>
+		{% for post in paginator.posts %}
+		<div class="post-item">
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<h4 class="post-title">
+					{{ post.title }}
+				</h4>
+			</a>
+			<div class="post-summary">
+				{{ post.content | strip_html | truncate:100 }}
+			</div>
 		</div>
+		{% endfor %}
 	</div>
-	{% endfor %}
-</div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pagination">
-	{% if paginator.previous_page %}
-	<li class="prev">
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-	</li>
+	{% if paginator.total_pages > 1 %}
+	<ul class="pagination">
+		{% if paginator.previous_page %}
+		<li class="prev">
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+		</li>
+		{% endif %}
+		{% if paginator.next_page %}
+		<li class="next">
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+		</li>
+		{% endif %}
+	</ul>
 	{% endif %}
-	{% if paginator.next_page %}
-	<li class="next">
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-	</li>
-	{% endif %}
-</ul>
-{% endif %}
+
+</div>
