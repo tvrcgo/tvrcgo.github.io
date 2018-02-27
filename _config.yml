@@ -10,6 +10,9 @@ baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 highlighter: rouge
 permalink: /p/:title
 paginate: 10
+exclude: ["Gemfile", "Gemfile.lock"]
+sass:
+  style: compressed
 
 # Gems
 gems:

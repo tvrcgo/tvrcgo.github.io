@@ -4,18 +4,20 @@ layout: default
 
 <h2>{{ site.title }}</h2>
 
-{% for post in paginator.posts %}
-<div class="post-item">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-    </a>
-    <div class="post-summary">
-        {{ post.content | strip_html | truncate:200 }}
+<div class='posts'>
+    {% for post in paginator.posts %}
+    <div class="post-item">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+        </a>
+        <div class="post-summary">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
     </div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination">
