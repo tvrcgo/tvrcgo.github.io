@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<h3><a href="{{ site.url }}">{{ site.title }}</a></h3>
-
 <header class="post-header" >
     <div class="row">
         <h1>{{ page.title }}</h1>
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} <a href="{{ site.url }}" class='post-agent'>{{ site.title }}</a></span>
     </div>
 </header>
 
