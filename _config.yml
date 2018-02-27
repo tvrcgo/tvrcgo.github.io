@@ -1,8 +1,7 @@
 # Site settings
 title: TVRCGO
-header-img: img/home-bg.jpg
-email: tvrcgo@gmail.com
 description: "An engineer"
+email: tvrcgo@gmail.com
 keyword: ""
 url: "http://tvrcgo.com"              # your host, for absolute URL
 baseurl: "/p"         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -10,7 +9,7 @@ baseurl: "/p"         # for example, '/blog' if your blog hosted on 'host/blog'
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: /:year-:month-:day/:title
+# permalink: /:year-:month-:day-:title
 paginate: 10
 
 # Gems
