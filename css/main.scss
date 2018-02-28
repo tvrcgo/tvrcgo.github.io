@@ -4,6 +4,7 @@
 body {
   background-color: #fdfdfd;
   font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height: 1.6em;
 }
 
 a {
@@ -17,31 +18,49 @@ h1, h2, h3, h4 {
 
 p {
   font-size: 16px;
-  line-height: 25.6px;
+  line-height: 1.6em;
   color: #3e3e3e;
 }
 
-.site {
+.page {
   max-width: 670px;
   margin: 0 auto;
   padding: 15px;
-}
 
-.page {
+  .page-title {
+    margin-top: 0;
+  }
 
   &.index {
 
   }
 
   &.post {
+    padding-bottom: 50px;
 
     .post-title {
       font-size: 24px;
-      margin: 0 0 15px 0;
+      margin: 0 0 15px;
     }
 
     .post-pagination {
       margin: 40px 0;
+      display: none;
+    }
+
+    .post-verbs {
+      text-align: center;
+      margin: 30px 0;
+
+      .verb-clap {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1px solid #E64545;
+        color: #E64545;
+      }
     }
   }
 
@@ -57,8 +76,15 @@ p {
     color: #777;
   }
 
-  .post-pagination {
-    display: none;
+  &.clap {
+
+    .wx-donate {
+      text-align: center;
+
+      img {
+        max-width: 300px;
+      }
+    }
   }
 }
 

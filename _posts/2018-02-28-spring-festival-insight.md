@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 春节回乡记
+clap: true
 ---
 
 ### 吃
