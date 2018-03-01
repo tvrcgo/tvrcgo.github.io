@@ -50,6 +50,16 @@ ul {
       margin-left: 5px;
     }
 
+    .sns {
+      text-align: center;
+      margin-top: 45px;
+
+      a {
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+
   }
 
   &.post {
@@ -78,20 +88,6 @@ ul {
       display: none;
     }
 
-    .post-verbs {
-      text-align: center;
-      margin: 30px 0;
-
-      .verb-clap {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 50%;
-        border: 1px solid #E64545;
-        color: #E64545;
-      }
-    }
   }
 
   .post-meta {
@@ -115,6 +111,21 @@ ul {
       img {
         max-width: 300px;
       }
+    }
+  }
+
+  .verbs {
+    text-align: center;
+    margin: 30px 0;
+
+    .verb-clap {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      border: 1px solid #E64545;
+      color: #E64545;
     }
   }
 }
