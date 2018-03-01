@@ -33,6 +33,19 @@ p {
 
   &.index {
 
+    h3 {
+      color: #555;
+      font-size: 22px;
+    }
+
+    a {
+      color: #3e3e3e;
+    }
+
+    .post-meta {
+      margin-left: 5px;
+    }
+
   }
 
   &.post {

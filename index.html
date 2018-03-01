@@ -6,36 +6,50 @@ layout: default
 
 	<h2 class='page-title'>{{ site.title }}</h2>
 
-	<div class='posts'>
-		{% for post in paginator.posts %}
-		<div class="post-item">
-			<a href="{{ post.url | prepend: site.baseurl }}">
-				<h4 class="post-title">
-					{{ post.title }}
-				</h4>
-			</a>
-			<div class="post-summary">
-				{{ post.content | strip_html | truncate:100 }}
-			</div>
-		</div>
-		{% endfor %}
+	<div class='profile'>
+		<h3># Profile</h3>
+		<p>工程师@Ali，现居广州。做 Airbnb 房东两年多。养了一只小黑狗叫拉拉，又叫小二黑。</p>
 	</div>
 
-	{% if paginator.total_pages > 1 %}
-	<div class="pagination">
+	<div class='posts'>
+		<h3># Posts</h3>
 		<ul>
-			{% if paginator.previous_page %}
-			<li class="prev">
-				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-			</li>
-			{% endif %}
-			{% if paginator.next_page %}
-			<li class="next">
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-			</li>
-			{% endif %}
+		{% for post in paginator.posts %}
+		<li class="post-item">
+			<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">
+				{{ post.title }}
+			</a>
+			<span class="post-meta">
+				{{ post.date | date: "%b %-d, %Y" }}
+			</span>
+		</li>
+		{% endfor %}
+		</ul>
+
+		{% if paginator.total_pages > 1 %}
+		<div class="pagination">
+			<ul>
+				{% if paginator.previous_page %}
+				<li class="prev">
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+				</li>
+				{% endif %}
+				{% if paginator.next_page %}
+				<li class="next">
+						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+				</li>
+				{% endif %}
+			</ul>
+		</div>
+		{% endif %}
+
+	</div>
+
+	<div class='projects'>
+		<h3># Projects</h3>
+		<ul>
+			<li>Coding Enlighten (alpha)</li>
 		</ul>
 	</div>
-	{% endif %}
 
 </div>
