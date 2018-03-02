@@ -8,13 +8,13 @@ layout: default
 
 	<div class='profile'>
 		<h3># Profile</h3>
-		<p>工程师，现居广州。做 Airbnb 房东两年多。养一只小黑狗叫拉拉，又名小二黑。</p>
+		<p>前端工程师 @Alibaba，居广州。Airbnb 房东。养一只小黑狗叫拉拉。好吃辣、喝可乐。玩 PS4。</p>
 	</div>
 
 	<div class='posts'>
 		<h3># Posts</h3>
 		<ul>
-		{% for post in paginator.posts %}
+		{% for post in site.categories.STAR %}
 		<li class="post-item">
 			<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">
 				{{ post.title }}
@@ -25,24 +25,6 @@ layout: default
 		</li>
 		{% endfor %}
 		</ul>
-
-		{% if paginator.total_pages > 1 %}
-		<div class="pagination">
-			<ul>
-				{% if paginator.previous_page %}
-				<li class="prev">
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-				</li>
-				{% endif %}
-				{% if paginator.next_page %}
-				<li class="next">
-						<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-				</li>
-				{% endif %}
-			</ul>
-		</div>
-		{% endif %}
-
 	</div>
 
 	<div class='projects'>
