@@ -95,6 +95,23 @@ ul {
       color: #3e3e3e;
     }
 
+    .head {
+      text-align: center;
+      margin-bottom: 15px;
+
+      .logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #333;
+      }
+
+      .page-title {
+        text-align: center;
+        margin: 15px 0;
+      }
+    }
+
     .post-meta {
       margin-left: 5px;
     }
