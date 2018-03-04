@@ -93,6 +93,7 @@ ul {
 
     a {
       color: #3e3e3e;
+      text-decoration: underline;
     }
 
     .head {
@@ -165,13 +166,13 @@ ul {
 
   &.clap {
 
+    .wxa-code {
+      max-width: 260px;
+    }
+
     .wx-donate {
       text-align: center;
       margin-top: 60px;
-
-      img {
-        max-width: 300px;
-      }
     }
   }
 
