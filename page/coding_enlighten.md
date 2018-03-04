@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /proj/coding_enlighten
+permalink: /page/coding_enlighten
 title: Coding Enlighten
 ---
 

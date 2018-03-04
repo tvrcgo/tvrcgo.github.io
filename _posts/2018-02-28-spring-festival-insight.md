@@ -5,7 +5,7 @@ clap: true
 tags:
   - 春节
 categories:
-  - STAR
+  - star
 ---
 
 ### 吃
