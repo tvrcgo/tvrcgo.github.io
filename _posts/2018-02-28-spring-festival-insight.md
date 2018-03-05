@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 春节回乡记
-clap: true
 tags:
   - 春节
 categories:
