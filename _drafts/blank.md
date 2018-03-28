@@ -1,7 +1,7 @@
 ---
 layout: post
 title:
+category:
 tags:
-categories:
 ---
 

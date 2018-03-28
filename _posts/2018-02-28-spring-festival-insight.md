@@ -1,10 +1,9 @@
 ---
 layout: post
 title: 春节回乡记
+category: star
 tags:
   - 春节
-categories:
-  - star
 ---
 
 ### 吃
