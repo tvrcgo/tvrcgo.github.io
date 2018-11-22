@@ -11,18 +11,25 @@ layout: default
 
 	<div>
 		<h3># Profile</h3>
-		<p>前端工程师@Ali \ Airbnb 房东 \ 养狗</p>
+		<p>软件工程师 \ Airbnb 房东 \ 养狗</p>
 	</div>
 
 	<div>
 		<h3># Posts</h3>
 		<ul>
-		{% for post in site.categories.star %}
-		<li class="post-item">
-			<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
-			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-		</li>
-		{% endfor %}
+			{% for post in site.posts %}
+			<li class="post-item">
+				<a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div>
+		<h3># Pages</h3>
+		<ul>
+
 		</ul>
 	</div>
 
