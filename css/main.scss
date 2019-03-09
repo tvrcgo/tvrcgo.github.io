@@ -106,8 +106,8 @@ ul {
 
       .avatar {
         display: inline-block;
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
         float: right;
       }
@@ -132,10 +132,15 @@ ul {
 
     .posts {
 
-      .post-meta {
-        margin-left: 5px;
-        font-size: 15px;
+      .post-item {
+        margin: 5px 0;
+
+        .post-meta {
+          margin-left: 5px;
+          font-size: 15px;
+        }
       }
+
 
     }
 
