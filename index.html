@@ -5,17 +5,11 @@ layout: default
 <div class='page index'>
 
 	<div class='head'>
-		<img src='/img/avatar.jpg' class='logo' />
 		<h2 class='page-title'>{{ site.title }}</h2>
-	</div>
-
-	<div>
-		<h3># Profile</h3>
 		<p>软件工程师 \ Airbnb 房东 \ 养狗</p>
 	</div>
 
-	<div>
-		<h3># Posts</h3>
+	<div class='posts'>
 		<ul>
 			{% for post in site.posts %}
 			<li class="post-item">
@@ -23,13 +17,6 @@ layout: default
 				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 			</li>
 			{% endfor %}
-		</ul>
-	</div>
-
-	<div>
-		<h3># Pages</h3>
-		<ul>
-
 		</ul>
 	</div>
 

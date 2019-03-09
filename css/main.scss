@@ -91,6 +91,7 @@ ul {
     h3 {
       color: #999;
       font-size: 20px;
+      font-weight: 100;
     }
 
     a {
@@ -99,20 +100,16 @@ ul {
     }
 
     .head {
-      text-align: center;
       margin-bottom: 15px;
-
-      .logo {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        border: 1px solid #555;
-      }
 
       .page-title {
         text-align: center;
         margin: 15px 0;
       }
+    }
+
+    .posts {
+
     }
 
     .post-meta {
