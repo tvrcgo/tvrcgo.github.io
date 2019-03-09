@@ -111,13 +111,17 @@ ul {
       .profile {
         color: #555;
       }
+
+      .contact {
+        color: #777;
+        a {
+          color: #777;
+          text-decoration: none;
+        }
+      }
     }
 
     .posts {
-
-      .post-title {
-
-      }
 
       .post-meta {
         margin-left: 5px;
