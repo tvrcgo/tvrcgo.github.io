@@ -101,10 +101,15 @@ ul {
 
     .head {
       margin-bottom: 15px;
+      padding: 60px 0;
 
       .page-title {
-        text-align: center;
         margin: 15px 0;
+        font-size: 36px;
+      }
+
+      .profile {
+        color: #555;
       }
     }
 
