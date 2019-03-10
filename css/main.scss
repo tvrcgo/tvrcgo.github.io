@@ -109,6 +109,7 @@ ul {
         height: 100px;
         border-radius: 50%;
         float: right;
+        margin-left: 15px;
       }
 
       .page-title {
@@ -122,6 +123,8 @@ ul {
 
       .contact {
         color: #777;
+        font-size: 0.8em;
+
         a {
           color: #777;
           text-decoration: none;
@@ -139,21 +142,7 @@ ul {
           font-size: 15px;
         }
       }
-
-
     }
-
-
-    .sns {
-      text-align: center;
-      margin-top: 45px;
-
-      a {
-        display: inline-block;
-        margin: 0 5px;
-      }
-    }
-
   }
 
   &.post {
